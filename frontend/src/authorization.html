@@ -8,9 +8,24 @@
 </head>
 <body>
 
-<h1>Форма авторизации</h1>
+<h2>Запись к врачу</h2>
 
-<p>My first paragraph.</p>
+<form action="" method="post" autocomplete="on">
+  <label for="login">Имя пользователя:</label><br>
+  <input type="text" id="login" name="login"><br><br>
+  <label for="password">Пароль:</label><br>
+  <input type="text" id="password" name="password"><br><br>
+  <input type="submit" value="Вход" class="submit_button">
+</form>
+<br>
+
+<div class="message">
+Введен неправильный логин или пароль
+</div>
+
+<p id="registration">
+<a href="registration.html">Создать учетную запись</a>
+</p>
 
 </body>
 </html>

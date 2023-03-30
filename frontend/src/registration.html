@@ -13,7 +13,6 @@
 <form id="main-form" action="" method="post" autocomplete="on">
   <label for="login">Логин:</label><br>
   <input type="text" id="login" name="login"><br>
-  <span class="message">Пользователь с таким логином уже существует</span><br><br>
   <label for="password">Пароль:</label><br>
   <input type="text" id="password" name="password"><br><br>
   <label for="name">Имя:</label><br>
@@ -25,7 +24,8 @@
     <option value="doctor">Доктор</option>
     <option value="patient">Пациент</option>
   </select><br><br><br>
-  <input type="submit" value="Регистрация" class="submit_button">
+  <input type="submit" value="Регистрация" class="submit_button"><br><br>
+  <span id="message" name="message" class="message"></span><br>
 </form>
 <br>
 

@@ -1,5 +1,4 @@
 ﻿document.getElementById('main-form').addEventListener("submit", checkForm);
-
 function todayDate() {
 let today = new Date();
 
@@ -9,10 +8,28 @@ let dd = String(today.getDate()).padStart(2, '0');
 
 let result = yyyy + '-' + mm + '-' + dd;
 document.getElementById('birthday').max = result;
-console.log('Дата: ' + document.getElementById('birthday').max);
 }
 
 todayDate();
 
-function checkForm() {
+function checkForm(event) {
+  event.preventDefault();
+  let el = document.getElementById('main-form');
+
+  let login = el.login.value;
+  let password = el.password.value;
+  let name = el.name.value;
+  let birthday = el.birthday.value;
+  let role = el.role.value;
+
+  let error = "";
+
+  if(login == "" || password == "" || name == "" || birthday == "") {
+  error = "Заполните все поля";
+  document.getElementById('message')
+.innerHTML = error;
+  document.getElementById('message').style.visibility = "visible";
+  }
+
+  // console.log(error);
 }

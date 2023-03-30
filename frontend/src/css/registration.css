@@ -10,12 +10,12 @@ h2 {
   margin-bottom: 10px;
 }
 
-form {  
+form {
   text-align: center;
   padding: 25px 25px 25px 25px;
-  width: 300px;
+  width: 320px;
   margin: auto;
-  border-style: none;  
+  border-style: none;
   border-width: thin;
   border-radius: 2px;
   background-color: #ffffff;
@@ -27,6 +27,18 @@ form {
 }
 
 #password {
+  font-size: 20px;
+}
+
+#name {
+  font-size: 20px;
+}
+
+#birthday {
+  font-size: 20px;
+}
+
+#role {
   font-size: 20px;
 }
 
@@ -44,13 +56,14 @@ form {
   color: #ffffff;
 }
 
-div.message {
+span.message {
   visibility: hidden;
+  font-size: 13px;
   text-align: center;
   color: red;
 }
 
-#registration {
+#authorization {
   text-align: center;
   color: #666666;
 }

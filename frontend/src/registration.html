@@ -3,14 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="css/name.css"> -->
-  <title>Заголовок документа</title>
+  <link rel="stylesheet" href="css/registration.css">
+  <title>Форма регистрации</title>
 </head>
 <body>
 
-<h1>My First Heading</h1>
+<h2>Система записи к врачу</h2>
 
-<p>My first paragraph.</p>
+<form id="main-form" action="" method="post" autocomplete="on">
+  <label for="login">Логин:</label><br>
+  <input type="text" id="login" name="login"><br>
+  <span class="message">Пользователь с таким логином уже существует</span><br><br>
+  <label for="password">Пароль:</label><br>
+  <input type="text" id="password" name="password"><br><br>
+  <label for="name">Имя:</label><br>
+  <input type="text" id="name" name="name"><br><br>
+  <label for="birthday">Дата рождения</label><br>
+  <input type="date" id="birthday" name="birthday"><br><br>
+  <label for="role">Выберите роль:</label><br>
+  <select id="role" name="role">
+    <option value="doctor">Доктор</option>
+    <option value="patient">Пациент</option>
+  </select><br><br><br>
+  <input type="submit" value="Регистрация" class="submit_button">
+</form>
+<br>
+
+<p id="authorization">
+<a href="authorization.html">Авторизация</a>
+</p>
+
+<script src="js/registration.js"></script>
 
 </body>
 </html>

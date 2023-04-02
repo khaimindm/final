@@ -10,22 +10,21 @@
 
 <h2>Запись к врачу</h2>
 
-<form action="" method="post" autocomplete="on">
+<form id="authorization-form" action="" method="post" autocomplete="on">
   <label for="login">Имя пользователя:</label><br>
   <input type="text" id="login" name="login"><br><br>
   <label for="password">Пароль:</label><br>
   <input type="text" id="password" name="password"><br><br>
-  <input type="submit" value="Вход" class="submit_button">
+  <input type="submit" value="Вход" class="submit_button"><br><br>
+  <span id="message" name="message" class="message"></span><br>
 </form>
 <br>
-
-<div class="message">
-Введен неправильный логин или пароль
-</div>
 
 <p id="registration">
 <a href="registration.html">Создать учетную запись</a>
 </p>
+
+<script src="js/authorization.js"></script>
 
 </body>
 </html>

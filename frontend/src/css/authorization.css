@@ -44,8 +44,9 @@ form {
   color: #ffffff;
 }
 
-div.message {
+span.message {
   visibility: hidden;
+  font-size: 13px;
   text-align: center;
   color: red;
 }

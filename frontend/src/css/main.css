@@ -7,6 +7,15 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    text-align: right;
+}
+
+li.toppanelel {
+    display: inline;
+}
+
+li.toppanelel a {    
+    padding: 8px;
 }
 
 #main {
@@ -26,9 +35,4 @@ body {
 
 li.mainlist {
     padding: 3px;
-}
-
-li.toppanelel {
-    display: inline;        
-    padding: 0px;    
 }

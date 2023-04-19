@@ -3,22 +3,24 @@ body {
     font-family: Arial, Verdana, sans-serif;
 }
 
+#top {
+    margin-left: 10px;
+}
+
 #toppanel {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    text-align: right;
 }
 
 li.toppanelel {
-    display: inline;
-}
-
-li.toppanelel a {    
+    float: left;
+    display: block;
     padding: 8px;
 }
 
 #main {
+    clear: both;
     border-left: 6px solid #2196f3;
     background-color: #ffffff;
     margin-top: 10px;

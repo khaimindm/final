@@ -43,7 +43,7 @@ li.toppanelel {
     margin-bottom: 10px;
     margin-left: 10px;
     padding-top: 1px;
-    padding-bottom: 1px;
+    padding-bottom: 25px;
     padding-left: 10px;
 }
 
@@ -58,9 +58,19 @@ li.mainlist {
 #additionalFunctions {
     border-style: solid;
     border-width: thin;
+    max-width: 700px;
 }
 
 h3 {
     color: #4d4d4d;
+    margin-left: 10px;
+}
+
+#maxPeriodEl {
+    max-width: 600px;
+    margin-left: 10px;
+}
+
+a.additionalFunctionsLinks {
     margin-left: 10px;
 }

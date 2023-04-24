@@ -35,11 +35,27 @@
         </form>
       </div>
       <p>
-        <a href="" class="additionalFunctionsLinks">Добавить специалиста</a><br><br>
-        <a href="" class="additionalFunctionsLinks">Удалить специалиста</a><br><br>
+        <button id="addSpecBtn" class="additionalFunctionsBtn">Добавить специалиста</button><br><br>
+        <button id="deleteSpecBtn" class="additionalFunctionsBtn">Удалить специалиста</button>
       </p>      
     </div>
   </div>
+
+  <div id="addModal" class="modal">
+    <div class="addModal-content">
+      <span class="close">&times;</span>
+      <p>Окно добавления специалиста</p>
+    </div>
+  </div>
+
+  <div id="deleteModal" class="modal">
+    <div class="deleteModal-content">
+      <span class="close">&times;</span>
+      <p>Окно удаления специалиста</p>
+    </div>
+  </div>
+
+  <script src="js/main_record_keeper.js"></script>
 
 </body>
 </html>

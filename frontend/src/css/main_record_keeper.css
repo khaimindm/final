@@ -94,19 +94,46 @@ button.additionalFunctionsBtn {
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 50%;
 }
 
-.close {
+.deleteModal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+.addClose {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.addClose:hover,
+.addClose:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+.deleteClose {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.deleteClose:hover,
+.deleteClose:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h3.modalHeading {
+    text-align: center;
+    color: black;        
 }

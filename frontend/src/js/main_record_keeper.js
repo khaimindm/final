@@ -32,3 +32,12 @@ window.onclick = function(event) {
         deleteModal.style.display = "none"
     }
 }
+
+document.getElementById('addNewSpecForm').addEventListener("submit", checkAddForm);
+
+function checkAddForm(event) {
+    event.preventDefault();
+    var addForm = document.getElementById('addNewSpecForm');
+
+    var addValue = addForm.nameOfTheSpecialist.value;
+}

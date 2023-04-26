@@ -137,3 +137,16 @@ h3.modalHeading {
     text-align: center;
     color: black;        
 }
+
+#addNewSpecForm {
+    border-style: solid;
+    text-align: center;
+    padding: 25px;
+    border-width: thin;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    border-color: #284157;
+    box-shadow: 0px 5px 10px 5px rgba(34, 60, 80, 0.3);
+}

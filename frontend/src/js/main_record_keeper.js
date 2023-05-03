@@ -8,8 +8,10 @@ var addSpan = document.getElementsByClassName("addClose")[0];
 var deleteSpan = document.getElementsByClassName("deleteClose")[0];
 
 var cancelBtnAddModal = document.getElementById("cancelBtnAddModal");
+var cancelBtnDeleteModal = document.getElementById("cancelBtnDeleteModal");
 
-var addError = "";
+var errorMessageAddModal = "";
+var errorMessageDeleteModal = "";
 
 addSpecBtn.onclick = function() {
     addModal.style.display = "block";
@@ -21,30 +23,38 @@ deleteSpecBtn.onclick = function() {
 
 addSpan.onclick = function() {
     addModal.style.display = "none";
-    addHideMessage();
+    hideMessageAddModal();
 }
 
 deleteSpan.onclick = function() {
     deleteModal.style.display = "none";
+    hideMessageDeleteModal();
 }
 
 window.onclick = function(event) {
     if (event.target == addModal) {
         addModal.style.display = "none";
-        addHideMessage();
+        hideMessageAddModal();
     }
 
     if (event.target == deleteModal) {
         deleteModal.style.display = "none"
+        hideMessageDeleteModal();
     }
 }
 
 cancelBtnAddModal.onclick = function() {
     addModal.style.display = "none";
-    addHideMessage();
+    hideMessageAddModal();
+}
+
+cancelBtnDeleteModal.onclick = function() {
+    deleteModal.style.display = "none";
+    hideMessageDeleteModal();
 }
 
 document.getElementById('addNewSpecForm').addEventListener("submit", checkAddForm);
+document.getElementById('deleteSpecForm').addEventListener("submit", checkDeleteForm);
 
 function checkAddForm(event) {
     event.preventDefault();
@@ -53,15 +63,35 @@ function checkAddForm(event) {
     var addValue = addForm.nameOfTheSpecialist.value;
 
     if (addValue == "") {
-        addError = "Заполните поле"
-        document.getElementById('messageAddNewSpecForm').innerHTML = addError;
+        errorMessageAddModal = "Заполните поле";
+        document.getElementById('messageAddNewSpecForm').innerHTML = errorMessageAddModal;
         document.getElementById('messageAddNewSpecForm').style.visibility = "visible";
     } else {
-        addHideMessage();
+        hideMessageAddModal();
     }
 }
 
-function addHideMessage() {
+function checkDeleteForm(event) {
+    event.preventDefault();
+    var deleteForm = document.getElementById('deleteSpecForm');
+
+    var deleteValue = deleteForm.nameOfTheSpecToBeDeleted.value;
+    
+    if (deleteValue == "") {
+        errorMessageDeleteModal = "Выберите специалиста";
+        document.getElementById('messageDeleteSpecForm').innerHTML = errorMessageDeleteModal;
+        document.getElementById('messageDeleteSpecForm').style.visibility = "visible";
+    } else {
+        hideMessageDeleteModal();
+    }
+}
+
+function hideMessageAddModal() {
     document.getElementById('messageAddNewSpecForm').innerHTML = "";
     document.getElementById('messageAddNewSpecForm').style.visibility = "hidden";
+}
+
+function hideMessageDeleteModal() {
+    document.getElementById('messageDeleteSpecForm').innerHTML = "";
+    document.getElementById('messageDeleteSpecForm').style.visibility = "hidden";
 }

@@ -34,22 +34,22 @@
         <th class="mainTable">Прием осуществлен</th>
       </tr>
       <tr>
-        <td><span>ФИО Пользователь 1</span></td>
+        <td class="user"><span id="0" class="user">ФИО Пользователь 1</span></td>
         <td class="mainTable">12:00</td>
         <td class="mainTable">Да</td>
       </tr>
       <tr>
-        <td><span>ФИО Пользователь 2</span></td>
+        <td class="user"><span id="1" class="user">ФИО Пользователь 2</span></td>
         <td class="mainTable">13:00</td>
         <td class="mainTable">Нет</td>
       </tr>
       <tr>
-        <td><span>ФИО Пользователь 3</span></td>
+        <td class="user"><span id="2" class="user">ФИО Пользователь 3</span></td>
         <td class="mainTable">14:00</td>
         <td class="mainTable">Да</td>
       </tr>
       <tr>
-        <td><span>ФИО Пользователь 4</span></td>
+        <td class="user"><span id="3" class="user">ФИО Пользователь 4</span></td>
         <td class="mainTable">15:00</td>
         <td class="mainTable">Да</td>
       </tr>
@@ -61,7 +61,18 @@
     <div class="modal-content">
       <span class="close">&times;</span>
       <!--Some text in the Modal..-->
-      <H1>Header</H1>
+      <H1 id="modalHeader">Пользователь</H1>
+      <form action="" method="post">
+        <label for="medicalHistory">Анамнез</label>
+        <input type="text" name="" id="medicalHistory">
+        <label for="diagn">Диагноз</label>
+        <input type="text" name="" id="diagn">
+        <label for="result">Прием осуществлен?</label>
+        <select name="" id="result">
+          <option value="true">Да</option>
+          <option value="false">Нет</option>
+        </select>
+      </form>
     </div>
 
   </div>

@@ -112,3 +112,7 @@ table, th, td {
   text-decoration: none;
   cursor: pointer;
 }
+
+span.user:hover {
+    background-color: #cfe8fc;
+}

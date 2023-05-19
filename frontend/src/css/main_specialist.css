@@ -92,9 +92,9 @@ table, th, td {
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background-color: #f0f0f1;
     margin: 15% auto;
-    padding: 20px;
+    padding: 30px 20px 30px 20px;
     border: 1px solid #888;
     width: 80%;
 }
@@ -115,4 +115,45 @@ table, th, td {
 
 span.user:hover {
     background-color: #cfe8fc;
+}
+
+#mainEl {
+    border-left: 6px solid #2196f3;
+    border-radius: 2px;
+    margin: auto;
+    width: 80%;
+    background-color: #ffffff;    
+    text-align: center;
+    padding: 25px 25px 25px 25px;
+}
+
+#modalHeader {
+    clear: both;
+    margin-left: 35px;
+}
+
+#medicalHistory {
+    font-size: 16px;
+    resize: none;
+    width: 100%;
+}
+
+#diagn {
+    font-size: 16px;
+    resize: none;
+    width: 100%;
+}
+
+label.mainForm {
+    float: left;
+    font-size: large;
+}
+
+#result {
+    float: left;
+    font-size: large;
+}
+
+#applyBtn {
+
 }

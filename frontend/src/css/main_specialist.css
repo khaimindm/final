@@ -154,6 +154,37 @@ label.mainForm {
     font-size: large;
 }
 
-#applyBtn {
+span.message {
+    visibility: hidden;
+    font-size: 13px;
+    text-align: center;
+    color: red;
+}
 
+button.cancel {  
+    margin-top: 15px;  
+    font-size: 18px;
+    padding: 10px 40px 10px 40px;
+    background-color: white;
+    border-style: solid;
+    border-width: thin;
+    border-color: #b3b3b3;
+    border-radius: 5px;    
+}
+
+button.cancel:hover {
+    background-color: rgb(204, 204, 204, 0.5);
+}
+
+input.apply {
+    color: white;
+    font-size: 18px;
+    padding: 10px 40px 10px 40px;
+    background-color: #2196f3;
+    border-style: none;
+    border-radius: 5px;
+}
+
+input.apply:hover {
+    background-color: #0b7dda;
 }

@@ -62,15 +62,15 @@
       <span class="close">&times;</span>
       <H3 id="modalHeader">Пациент</H3>
       <div id="mainEl">
-        <form action="" method="post">
+        <form id="doctorsAppointmentModalForm" action="" method="post">
           <div>
             <label for="medicalHistory" class="mainForm">Анамнез</label>
-            <textarea name="" id="medicalHistory" rows="5"></textarea><br>
+            <textarea name="medicalHistory" id="medicalHistory" rows="5"></textarea><br>
           </div><br>
 
           <div>
             <label for="diagn" class="mainForm">Диагноз</label>
-            <textarea name="" id="diagn" rows="5"></textarea><br>
+            <textarea name="diagn" id="diagn" rows="2"></textarea><br>
           </div><br>
 
           <label for="result" class="mainForm">Прием осуществлен?</label>
@@ -86,7 +86,9 @@
       </div>      
     </div>
 
-  </div>
+  </div><br><br>
+
+  <button type="button" id="makeAnAppointmentBtn">Запись на прием</button>
 
   <script src="js/main_specialist.js"></script>
 

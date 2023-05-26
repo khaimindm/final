@@ -188,3 +188,7 @@ input.apply {
 input.apply:hover {
     background-color: #0b7dda;
 }
+
+#makeAnAppointmentBtn {
+    margin-left: 10px;
+}

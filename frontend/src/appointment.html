@@ -18,10 +18,38 @@
   </div>
 
   <div id="main">
-    <h1>My First Heading</h1>
-    <p>My first paragraph.</p>
-  </div>
+    <h1 class="main">Запись к: Специалист</h1>
+    
+    <div id="patientEl">
+      <form id="patientForm" action="" method="post">
+        <label class="patientFormLabel" for="fname">Имя: </label><br>
+        <input type="text" name="fname" id="fname"><br>
+        <label class="patientFormLabel" for="lname">Фамилия: </label><br>
+        <input type="text" name="lname" id="lname">
+      </form>
+    </div><br>
 
+    <div id="dateFormEl">    
+      <form id="dateForm" action="" method="post">
+        <label for="date">Выберите дату:</label>
+        <input type="date" name="date" id="date">
+        <input type="submit" value="Применить">
+      </form>
+    </div>
+
+    <div id="choosingAvailableTimeFormEl">
+      <form id="choosingAvailableTimeForm" action="" method="post">
+        <label for="availableTime">Выберите доступное время на <span id="dateSpan">Дата</span></label>
+        <select name="availableTime" id="availableTime">
+          <option value="08:00">08:00</option>
+          <option value="08:30">08:30</option>
+          <option value="09:00">09:00</option>
+        </select>
+      </form>
+    </div>
+
+  </div>
+  
   <div id="confirmationModal" class="modal">
     
     <div class="modal-content">

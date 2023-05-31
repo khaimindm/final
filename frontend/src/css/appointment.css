@@ -36,7 +36,43 @@ li.toppanelel {
 }
 
 #main {
-    clear: both;
+    clear: both;    
+}
+
+h1.main {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#patientForm {
+    font-size: 20px;
+}
+
+label.patientFormLabel {    
+    margin-left: 10px;
+}
+
+#fname, #lname {
+    font-size: 15px;
+    margin-left: 10px; 
+}
+
+#dateFormEl, #choosingAvailableTimeFormEl {
+    margin-left: 10px;
+    padding-top: 15px;
+}
+
+#dateForm, #choosingAvailableTimeForm {
+    font-size: 20px;
+}
+
+#date, #availableTime {
+    font-size: 15px;    
+}
+
+#dateSpan {
+    color: darkcyan;
+    font-weight: bold;
 }
 
 .modal {

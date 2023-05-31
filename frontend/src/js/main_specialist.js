@@ -1,5 +1,4 @@
 document.getElementById("elForMainTable").addEventListener('click', userBtn);
-document.getElementById("makeAnAppointmentBtn").addEventListener('click', makeAnAppointmentBtn);
 
 var modal = document.getElementById("doctorsAppointmentModal");
 
@@ -22,10 +21,6 @@ function userBtn(event) {
         userId = userEl.getAttribute("id");        
         document.getElementById('modalHeader').innerHTML = userEl.innerHTML + " User Id: " + userId;
     }
-}
-
-function makeAnAppointmentBtn(event) {
-    document.location = "appointment.html";
 }
 
 var span = document.getElementsByClassName("close")[0];

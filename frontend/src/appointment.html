@@ -23,30 +23,31 @@
     <div id="patientEl">
       <form id="patientForm" action="" method="post">
         <label class="patientFormLabel" for="fname">Имя: </label><br>
-        <input type="text" name="fname" id="fname"><br>
+        <input type="text" readonly name="fname" id="fname" value="John"><br>
         <label class="patientFormLabel" for="lname">Фамилия: </label><br>
-        <input type="text" name="lname" id="lname">
+        <input type="text" readonly name="lname" id="lname" value="Doe">
       </form>
     </div><br>
 
     <div id="dateFormEl">    
       <form id="dateForm" action="" method="post">
         <label for="date">Выберите дату:</label>
-        <input type="date" name="date" id="date">
-        <input type="submit" value="Применить">
+        <input type="date" name="date" id="date">        
       </form>
     </div>
 
     <div id="choosingAvailableTimeFormEl">
       <form id="choosingAvailableTimeForm" action="" method="post">
-        <label for="availableTime">Выберите доступное время на <span id="dateSpan">Дата</span></label>
+        <label for="availableTime">Выберите доступное время:</label>
         <select name="availableTime" id="availableTime">
           <option value="08:00">08:00</option>
           <option value="08:30">08:30</option>
           <option value="09:00">09:00</option>
         </select>
       </form>
-    </div>
+    </div><br>
+
+    <button id="applyBtn">Записаться</button>
 
   </div>
   

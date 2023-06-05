@@ -6,7 +6,10 @@ var span = document.getElementsByClassName("close")[0];
 
 var date = document.getElementById("date");
 
+var patientFName;
+var patientLName;
 var selectedDate;
+var selectedTime
 
 document.addEventListener("DOMContentLoaded", function(){
     var d = new Date();
@@ -25,11 +28,29 @@ document.addEventListener("DOMContentLoaded", function(){
     var name_input = document.getElementById("date");    
     var currentDate = year + "-" + month + "-" + day;
     name_input.value = currentDate;
-    selectedDate = currentDate;
+    selectedDate = currentDate;     
 });
 
-btn.onclick = function() {
-    modal.style.display = "block";
+btn.onclick = function() {    
+    var fname = document.getElementById("fname").value;
+    var lname = document.getElementById("lname").value;
+    if (fname == "" || lname == "") {
+       var message = "Заполните все поля";
+        document.getElementById("message").innerHTML = message;
+        document.getElementById("message").style.visibility = "visible";
+        return;       
+    } else {
+        document.getElementById("message").innerHTML = "";
+        document.getElementById("message").style.visibility = "hidden";
+        modal.style.display = "block";
+        patientFName = fname;
+        patientLName = lname;        
+        document.getElementById("fnameConfirmation").value = patientFName;
+        document.getElementById("lnameConfirmation").value = patientLName;
+        document.getElementById("dateConfirmation").value = selectedDate;
+        selectedTime = document.getElementById("availableTime").value;        
+        document.getElementById("timeConfirmation").value = selectedTime;
+    }
 }
 
 span.onclick = function() {

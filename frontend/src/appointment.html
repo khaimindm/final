@@ -47,6 +47,7 @@
       </form>
     </div><br>
 
+    <span id="message" name="message" class="message"></span><br>
     <button id="applyBtn">Записаться</button>
 
   </div>
@@ -54,8 +55,27 @@
   <div id="confirmationModal" class="modal">
     
     <div class="modal-content">
-      <span class="close">&times;</span>
-      <!--Some text in the Modal..-->
+      <span class="close">&times;</span>            
+      <h3 class="modalHeading">Подтверждение записи</h3>
+
+      <div>        
+        <form id="patientDataForm" action="" method="post">
+          <div id="dataForConfirmation">
+            <label for="fnameConfirmation">Имя:</label><br>
+          <input type="text" readonly id="fnameConfirmation"><br>
+          <label for="lnameConfirmation">Фамилия:</label><br>
+          <input type="text" readonly id="lnameConfirmation"><br>
+          <label for="dateConfirmation">Дата:</label><br>
+          <input type="date" readonly name="" id="dateConfirmation"><br>
+          <label for="">Время:</label><br>
+          <input type="time" readonly name="" id="timeConfirmation"><br>
+          </div>
+          <div id="elForButtonsModal">
+            <button type="button" id="cancelBtn" class="cancel">Отмена</button>
+            <input type="submit" id="confirmBtn" class="confirm" value="Подтвердить">            
+          </div>          
+        </form>        
+      </div>
     </div>
 
   </div>

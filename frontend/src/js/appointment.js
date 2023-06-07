@@ -6,6 +6,8 @@ var span = document.getElementsByClassName("close")[0];
 
 var date = document.getElementById("date");
 
+var cancelBtn = document.getElementById("cancelBtn");
+
 var patientFName;
 var patientLName;
 var selectedDate;
@@ -65,4 +67,8 @@ window.onclick = function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
     }
+}
+
+cancelBtn.onclick = function() {
+    modal.style.display = "none";
 }

@@ -19,13 +19,13 @@ function checkForm(event) {
 
   let login = el.login.value;
   let password = el.password.value;
-  let name = el.name.value;
+  let fname = el.fname.value;
+  let lname = el.lname.value;
   let birthday = el.birthday.value;
-  let role = el.role.value;
 
   let error = "";
 
-  if(login == "" || password == "" || name == "" || birthday == "") {
+  if(login == "" || password == "" || fname == "" || lname == "" || birthday == "") {
   error = "Заполните все поля";
   document.getElementById('message').innerHTML = error;
   document.getElementById('message').style.visibility = "visible";
